@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  /* Dark background */
+  color: #E0E0E0;
+  /* Light text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  background: #1E1E1E;
+  /* Dark card background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+h1 {
+  color: #00BCD4;
+  /* Cyan highlights */
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Cart Container */
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.cart-card {
+  background: #1E1E1E;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  width: 28%;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cart-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px #00BCD4;
+  /* Cyan glow on hover */
+  background: #262626;
+}
+
+/* Cart Info */
+.cart-info {
+  margin-bottom: 15px;
+  color: #E0E0E0;
+}
+
+.cart-info h2 {
+  color: #00BCD4;
+  margin-bottom: 10px;
+}
+
+.cart-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Product Cards */
+.products-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #2C2C2C;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px #00BCD4;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product-info h4 {
+  font-size: 14px;
+  color: #00BCD4;
+  margin: 5px 0;
+}
+
+.product-info p {
+  font-size: 12px;
+  color: #B0B0B0;
+  margin: 2px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cart-card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-card {
+    width: 100%;
+  }
+}
