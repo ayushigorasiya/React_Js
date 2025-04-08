@@ -1,0 +1,438 @@
+/* Quote Css Start*/
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.quote-container {
+  max-width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.quote-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  color: #e0e0e0;
+  background-color: #1f1f1f;
+}
+
+.quote-table thead {
+  background-color: #333333;
+}
+
+.quote-table th {
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.quote-table td {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid #444444;
+}
+
+.quote-table tbody tr:hover {
+  background-color: #444444;
+  cursor: pointer;
+}
+
+.quote-table tbody tr:hover td {
+  color: #ffffff;
+}
+
+.quote-table tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.quote-table tbody tr:nth-child(odd) {
+  background-color: #1f1f1f;
+}
+
+/* Quote Css End*/
+
+/*Recipe Css Start*/
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  color: #f1f1f1;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  margin: 100px 0px 50px 0px;
+  font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 15px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ddd;
+  max-width: 380px;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  color: #ffa500;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.card-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card-content ul li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.card-content ul li:before {
+  content: "• ";
+  color: #ffa500;
+  margin-right: 5px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.rating {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.tags {
+  margin-top: 15px;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #333;
+  color: #ffa500;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background-color: #ffa500;
+  color: #121212;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Recipe Css End*/
+
+/* Product Css Start*/
+
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(141, 159, 177);
+  margin-bottom: 40px;
+}
+
+.product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(85, 85, 85, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  border: 1px solid rgb(141, 159, 177)  ;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+.product-info {
+  margin-top: 15px;
+}
+
+.product-info h2 {
+  font-size: 1.5rem;
+  color: rgb(141, 159, 177);
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  color: #E0E0E0;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+strong {
+  color: rgb(141, 159, 177);
+}
+
+.category,
+.stock,
+.weight,
+.rating,
+.availabilityStatus {
+  margin-bottom: 10px;
+}
+
+.tags ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tags li {
+  display: inline-block;
+  background-color: #333;
+  color: rgb(141, 159, 177);
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.dimensions ul,
+.reviews ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dimensions li,
+.reviews li {
+  margin-bottom: 8px;
+}
+
+.image-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.image-gallery img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/*Product Css End*/
+
+/* Users Css Start*/
+/* App.css */
+
+/* General Styles */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.users-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* Card Container Styles */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.user-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+/* Card Header Styles */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Card Body Styles */
+.card-body {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card-footer {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-body p,
+.card-footer p {
+  margin: 5px 0;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Section Specific Styling */
+.hair-info,
+.address-info,
+.company-info,
+.crypto-info {
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .user-card {
+      width: 100%;
+      max-width: 400px;
+  }
+}
+
+/* Users Css End*/
