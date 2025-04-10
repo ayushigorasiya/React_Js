@@ -3,12 +3,15 @@ import Quote from "./Component/Quote";
 import Recipe from "./Component/Recipe";
 import Product from "./Component/Product";
 import Users from "./Component/Users";
+// import Object from "./Component/Object";
 
 function App() {
   let [quotes, setQuote] = useState([]); // Quote State
   let [recipe, setRecipe] = useState([]); // Recipe State
   let [userproducts, setUserProducts] = useState([]);//Product State
   let [users, setUSers] = useState([]);// Users State
+  // let[object,setObj] =useState([]);
+  // //object state
 
 
   //Quote API Start
@@ -19,6 +22,7 @@ function App() {
         setQuote(quotedata.quotes); // Access quotes directly from quotedata
       }).catch((err) => {
         console.log(err);
+        return false;
       })
   }
   //Quote API End
@@ -31,6 +35,7 @@ function App() {
         setRecipe(recipedata.recipes);
       }).catch((err) => {
         console.log(err);
+        return false;
       })
   }
   //Recipe API End
@@ -43,6 +48,7 @@ function App() {
         setUserProducts(productdata.products)
       }).catch((err) => {
         console.log(err);
+        return false;
       })
   }
 
@@ -56,26 +62,42 @@ function App() {
         setUSers(usersdata.users)
       }).catch((err) => {
         console.log(err);
+        return false;
       })
   }
 
   //Users API End
+
+  //Object API Start
+  // const getObj =() => {
+  //   fetch(`https://api.restful-api.dev/objects`)
+  //   .then(res => res.json())
+  //   .then((objdata) => {
+  //     setObj(objdata);
+  //     console.log(objdata);
+  //   }).catch((err) => {
+  //     console.log(err);
+  //     return false;
+  //   })
+  // }
+  //Object API End
 
   useEffect(() => {
     getQuotes();
     getRecipe();
     getProduct();
     getUsers();
-
+    // getObj();
   }, [])
 
   return (
     <>
+     {/* <Object obj={object}/> */}
       <Users usersdata={users} />
       <Recipe recipe={recipe} />
       <Quote quote={quotes} />
       <Product userproducts={userproducts} />
-
+     
     </>
   );
 }
