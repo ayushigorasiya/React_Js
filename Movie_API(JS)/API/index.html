@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- logo -->
+        <div class="logo">
+            <div class="container">
+                <p>Movie<span>Star✫</span> </p>
+            </div>
+        </div>
+        <!-- end of logo -->
+        <!-- search container -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box"
+                    onclick="findMovies()">
+                <div class="search-list" id="search-list">
+                </div>
+            </div>
+        </div>
+        <!-- end of search container -->
+        <!-- result container -->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <!-- movie information here -->
+                </div>
+            </div>
+        </div>
+        <!-- end of result container -->
+    </div>
+    <!-- movie app js -->
+    <script type="text/javascript">
+        const movieSearchBox = document.getElementById('movie-search-box');
+        const searchList = document.getElementById('search-list');
+        const resultGrid = document.getElementById('result-grid');
+        // load movies from API
+        async function loadMovies(searchTerm) {
+            const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
+            const res = await fetch(`${URL}`);
+            const data = await res.json();
+            // console.log(data.Search);
+            if (data.Response == "True") displayMovieList(data.Search);
+        }
+        function findMovies() {
+            let searchTerm = (movieSearchBox.value).trim();
+            if (searchTerm.length > 0) {
+                searchList.classList.remove('hide-search-list');
+                loadMovies(searchTerm);
+            } else {
+                searchList.classList.add('hide-search-list');
+            }
+        }
+        function displayMovieList(movies) {
+            searchList.innerHTML = "";
+            for (let idx = 0; idx < movies.length; idx++) {
+                let movieListItem = document.createElement('div');
+                movieListItem.dataset.id = movies[idx].imdbID; // setting movie id in  data-id
+                movieListItem.classList.add('search-list-item');
+                if (movies[idx].Poster != "N/A")
+                    moviePoster = movies[idx].Poster;
+                else
+                    moviePoster = "image_not_found.png";
+                movieListItem.innerHTML = `
+        <div class = "search-item-thumbnail">
+            <img src = "${moviePoster}">
+        </div>
+        <div class = "search-item-info">
+            <h3>${movies[idx].Title}</h3>
+            <p>${movies[idx].Year}</p>
+        </div>
+        `;
+                searchList.appendChild(movieListItem);
+            }
+            loadMovieDetails();
+        }
+        function loadMovieDetails() {
+            const searchListMovies = searchList.querySelectorAll('.search-list-item');
+            searchListMovies.forEach(movie => {
+                movie.addEventListener('click', async () => {
+                    console.log(movie.dataset.id);
+                    searchList.classList.add('hide-search-list');
+                    movieSearchBox.value = "";
+                    const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
+                    const movieDetails = await result.json();
+                    console.log(movieDetails);
+                    displayMovieDetails(movieDetails);
+                });
+            });
+        }
+        function displayMovieDetails(details) {
+            resultGrid.innerHTML = `
+    <div class = "movie-poster">
+        <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
+    </div>
+    <div class = "movie-info">
+        <h3 class = "movie-title">${details.Title}</h3>
+        <ul class = "movie-misc-info">
+            <li class = "year">Year: ${details.Year}</li>
+            <li class = "rated">Ratings: ${details.Rated}</li>
+            <li class = "released">Released: ${details.Released}</li>
+        </ul>
+        <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
+        <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
+        <p class = "actors"><b>Actors: </b>${details.Actors}</p>
+        <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
+        <p class = "language"><b>Language:</b> ${details.Language}</p>
+        <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
+    </div>
+    `;
+        }
+        window.addEventListener('click', (event) => {
+            if (event.target.className != "form-control") {
+                searchList.classList.add('hide-search-list');
+            }
+        });
+    </script>
+</body>
+</html>

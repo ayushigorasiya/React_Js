@@ -1,0 +1,371 @@
+{
+    "navbar": [
+        {
+            "navbar-left": {
+                "city": [
+                    "ahemdabad",
+                    "rajkot",
+                    "amreli",
+                    "navsari",
+                    "vidhyanagar",
+                    "bhavnagar",
+                    "gandhinagar",
+                    "bharuch"
+                ],
+                "language": [
+                    "Arabic",
+                    "Armenian",
+                    "Azerbaijani",
+                    "Assamese",
+                    "Afrikaans",
+                    "Albanian",
+                    "Amharic",
+                    "Bengali",
+                    "Basque",
+                    "Bosnian",
+                    "Bhojpuri",
+                    "Belarusian",
+                    "Bulgarian",
+                    "Bislama",
+                    "Burmese",
+                    "Chinese",
+                    "Czech",
+                    "Catalan",
+                    "Cree",
+                    "Croatian",
+                    "Chichewa",
+                    "Chewa",
+                    "Chamorro",
+                    "Dutch",
+                    "Danish",
+                    "Dari",
+                    "Dzongkha",
+                    "Dogri",
+                    "English",
+                    "Estonian",
+                    "Esperanto",
+                    "Ewe",
+                    "French",
+                    "Finnish",
+                    "Fijian",
+                    "Faroese",
+                    "Filipino",
+                    "German",
+                    "Greek",
+                    "Gujarati",
+                    "Georgian",
+                    "Gaelic",
+                    "Hindi",
+                    "Hungarian",
+                    "Hausa",
+                    "Hebrew",
+                    "Haitian Creole",
+                    "Hmong",
+                    "Italian",
+                    "Igbo",
+                    "Indonesian",
+                    "Irish",
+                    "Inuktitut",
+                    "Icelandic",
+                    "Japanese",
+                    "Javanese",
+                    "Judeo-Arabic",
+                    "Korean",
+                    "Kannada",
+                    "Kurdish",
+                    "Kazakh",
+                    "Kinyarwanda",
+                    "Khmer",
+                    "Konkani",
+                    "Latin",
+                    "Lao",
+                    "Lithuanian",
+                    "Latvian",
+                    "Luganda",
+                    "Limburgish",
+                    "Malay",
+                    "Marathi",
+                    "Mandarin",
+                    "Maori",
+                    "Malayalam",
+                    "Mongolian",
+                    "Maltese",
+                    "Nepali",
+                    "Norwegian",
+                    "Navajo",
+                    "Nyanja",
+                    "Nahuatl",
+                    "Oromo",
+                    "Odia",
+                    "Ojibwe",
+                    "Occitan",
+                    "Portuguese",
+                    "Punjabi",
+                    "Pashto",
+                    "Polish",
+                    "Persian",
+                    "Palauan",
+                    "Quechua",
+                    "Qashqai",
+                    "Russian",
+                    "Romanian",
+                    "Rwanda",
+                    "Rajasthani",
+                    "Spanish",
+                    "Swedish",
+                    "Swahili",
+                    "Slovak",
+                    "Serbian",
+                    "Sindhi",
+                    "Sanskrit",
+                    "Somali",
+                    "Sundanese",
+                    "Turkish",
+                    "Tamil",
+                    "Telugu",
+                    "Thai",
+                    "Tajik",
+                    "Tigrinya",
+                    "Tongan",
+                    "Urdu",
+                    "Ukrainian",
+                    "Uzbek",
+                    "Uyghur",
+                    "Vietnamese",
+                    "Venda",
+                    "Valencian",
+                    "Welsh",
+                    "Wolof",
+                    "Waray",
+                    "Walloon",
+                    "Xhosa",
+                    "Xiang Chinese",
+                    "Yoruba",
+                    "Yiddish",
+                    "Yakut",
+                    "Zulu",
+                    "Zhuang",
+                    "Zapotec"
+                ]
+            },
+            "navbar-right": {
+                "branch_Contact_number": [
+                    "RW1 (A K Road) :+91 79847 11520 ",
+                    "RW2 (Yogi Chowk) :+91 63510 87408 ",
+                    "RW3 (Sarthana) :+91 78787 80511 ",
+                    "RW4 (Mota Varachha) :+91 63522 95143 ",
+                    "RW5 (Ved Road) :+91 63522 95139 ",
+                    "RW6 (Adajan) :+91 92777 18777 ",
+                    "RW7 (Vesu) :+91 94848 88444 ",
+                    "RW8 (Dindoli) :+91 94848 42426 "
+                ]
+            }
+        }
+    ],
+    "header": [
+        {
+            "header-logo": {
+                "logo": "https://www.rnwmultimedia.edu.in/assets/img/photos/rnw-logo.png"
+            },
+            "header-details": [
+                "home",
+                {
+                    "std 10th & 12th": [
+                        "ITA-CS+",
+                        "Animation & VFX 2 year",
+                        "Business Administration Commerce"
+                    ]
+                },
+                {
+                    "career courses": [
+                        {
+                            "designing": [
+                                "Master in Graphic Design",
+                                "Master in UI/UX & Graphic Design",
+                                "UI/UX Design course",
+                                "Master in Game Design"
+                            ],
+                            "visulization": [
+                                "Master in Animation",
+                                "Animation & VFX 2 year"
+                            ],
+                            "coding & programming": [
+                                "master in web designing",
+                                "master in frontend devloping",
+                                "master in web devloping",
+                                "master in android devloping",
+                                "master in ios developing",
+                                "master in game developing",
+                                "master in flutter",
+                                "advance in python",
+                                "full stack devlopment"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "courses": [
+                        {
+                            "programming": [
+                                "java",
+                                "android",
+                                "ios",
+                                "react native",
+                                "react.js",
+                                "node.js",
+                                "php",
+                                "unity c# script",
+                                "angular js",
+                                "laravel",
+                                "python"
+                            ],
+                            "graphic design": [
+                                "photoshop",
+                                "illustrator",
+                                "figma",
+                                "corel drow",
+                                "after effect",
+                                "poster designing"
+                            ],
+                            "video editing": [
+                                "video editing",
+                                "darvinci resolve course"
+                            ],
+                            "short term": [
+                                "microsoft office",
+                                "cyber security",
+                                "full stack development bootcamp",
+                                "data analysis",
+                                "autodesk autocad cource",
+                                "digital marketing",
+                                "visual effect cource"
+                            ],
+                            "frontend coding": [
+                                "bootstrap",
+                                "html5 css3"
+                            ],
+                            "project trainning": [
+                                "php",
+                                "android training",
+                                "ios",
+                                "java",
+                                "flutter",
+                                "python"
+                            ],
+                            "foundation cource": [
+                                "ccc",
+                                "c & c++",
+                                "software development foundation"
+                            ],
+                            "corporate trainning": [
+                                "public speaking cource",
+                                "enterpreneurship bootcamp"
+                            ],
+                            "next-gen technology": [
+                                "data science & ai-ml python",
+                                "ar-vr"
+                            ],
+                            "accounting": [
+                                "diploma in practical accounting & taxation"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "about us": [
+                        {
+                            "group institutes": [
+                                "rnw designing institute",
+                                "rnw international"
+                            ]
+                        },
+                        {
+                            "career with us": "",
+                            "Affiliations / Authorised": "",
+                            "press notes": ""
+                        }
+                    ]
+                },
+                {
+                    "student corner": [
+                        "apply job",
+                        "placement",
+                        "company visit",
+                        "expert session",
+                        "placement drive",
+                        "grievence",
+                        "why i choose rnw",
+                        "placement partners",
+                        "students works"
+                    ]
+                },
+                "contact us"
+            ]
+        }
+    ],
+    "slider": [
+        "https://www.rnwmultimedia.edu.in/assets/img/slider/rnw_web_slider.png",
+        "https://www.rnwmultimedia.edu.in/assets/img/slider/Ai-banner.jpg",
+        "https://www.rnwmultimedia.edu.in/assets/img/slider/rnw_web_slider1.png",
+        "https://www.rnwmultimedia.edu.in/assets/img/slider/rnw_web_slider2.png"
+    ],
+    "counter": {
+        "students_trained": "40,000+",
+        "approved_courses": "50+",
+        "company_tieups": "1500+",
+        "branches": "22+",
+        "certification": "8+"
+    },
+    "build career":{
+        "title":"Pick The Right Course To Build Your Career"
+    },
+    "career":[
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/1.png",
+            "cource":"web designing"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/2.png",
+            "cource":"ios development"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/1.png",
+            "cource":"web development"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/2.png",
+            "cource":"android development"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/4.png",
+            "cource":"animation"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/data.png",
+            "cource":"al & data science"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/data.png",
+            "cource":"game design & developing"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/1.png",
+            "cource":"full stack developing"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/3.png",
+            "cource":"ui-ux and graphic design"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/design.png",
+            "cource":"poster-design"
+        },
+        {
+            "img":"https://www.rnwmultimedia.edu.in/assets/img/course/hacker.png",
+            "cource":"cyber security"
+        }
+        
+    ]
+   
+
+}

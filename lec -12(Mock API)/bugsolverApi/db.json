@@ -1,0 +1,515 @@
+{
+    "bugs": [
+      {
+        "id": 1,
+        "title": "Login button not responsive",
+        "description": "Login button doesn't trigger API call on mobile view.",
+        "status": "Open",
+        "priority": "High",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cart total incorrect",
+        "description": "The total amount is not calculating properly when quantity changes.",
+        "status": "In Progress",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 3,
+        "title": "App crashes on splash screen",
+        "description": "Android version crashes after splash screen on API 28.",
+        "status": "Open",
+        "priority": "Critical",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Payment gateway failed",
+        "description": "Payment gateway throws error on submission.",
+        "status": "Closed",
+        "priority": "High",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Search results not sorting",
+        "description": "Sorting by price doesn't work correctly.",
+        "status": "Open",
+        "priority": "Low",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 6,
+        "title": "App freezes on loading",
+        "description": "App freezes after loading product list.",
+        "status": "In Progress",
+        "priority": "High",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 7,
+        "title": "User profile update issue",
+        "description": "User profile update form doesn't save data.",
+        "status": "Open",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 8,
+        "title": "Product image not loading",
+        "description": "Product images are not loading on the product page.",
+        "status": "Closed",
+        "priority": "Low",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 9,
+        "title": "Rating system broken",
+        "description": "Rating system doesn't show average ratings correctly.",
+        "status": "Open",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 10,
+        "title": "Network request failed",
+        "description": "Network request fails after updating product details.",
+        "status": "In Progress",
+        "priority": "High",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 11,
+        "title": "App crashes on checkout",
+        "description": "App crashes after adding product to cart and checking out.",
+        "status": "Closed",
+        "priority": "Critical",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 12,
+        "title": "Images not responsive",
+        "description": "Images don't resize properly on different screen sizes.",
+        "status": "Open",
+        "priority": "Low",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 13,
+        "title": "Empty cart bug",
+        "description": "Cart sometimes shows empty even after adding items.",
+        "status": "In Progress",
+        "priority": "High",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 14,
+        "title": "Checkout button unresponsive",
+        "description": "Checkout button doesn't trigger API call.",
+        "status": "Open",
+        "priority": "High",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 15,
+        "title": "Incorrect order summary",
+        "description": "Order summary shows wrong total amount after discount.",
+        "status": "Closed",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 16,
+        "title": "No notifications for new orders",
+        "description": "Admins not receiving notifications for new orders.",
+        "status": "Open",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 17,
+        "title": "Product detail page broken",
+        "description": "Product detail page shows broken links for related products.",
+        "status": "In Progress",
+        "priority": "Low",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 18,
+        "title": "App doesn't support dark mode",
+        "description": "Mobile app doesn't switch to dark mode despite system setting.",
+        "status": "Open",
+        "priority": "Low",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 19,
+        "title": "Server timeout error on checkout",
+        "description": "Timeout error while attempting checkout during heavy traffic.",
+        "status": "Closed",
+        "priority": "Critical",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 20,
+        "title": "Login page redirects to homepage",
+        "description": "After login, user is redirected to homepage instead of dashboard.",
+        "status": "In Progress",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 21,
+        "title": "Product not updating in cart",
+        "description": "After adding product to cart, quantity doesn't update.",
+        "status": "Open",
+        "priority": "Low",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 22,
+        "title": "App doesn't load after update",
+        "description": "App crashes after latest update on Android.",
+        "status": "Closed",
+        "priority": "Critical",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 23,
+        "title": "Missing cart button on mobile",
+        "description": "Cart button is missing on the mobile version of the site.",
+        "status": "Open",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 24,
+        "title": "App not syncing data",
+        "description": "App fails to sync user data across devices.",
+        "status": "In Progress",
+        "priority": "High",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 25,
+        "title": "Product reviews not loading",
+        "description": "Product reviews are not showing up on the product page.",
+        "status": "Open",
+        "priority": "Low",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 26,
+        "title": "Incorrect tax calculation",
+        "description": "The tax amount is calculated incorrectly at checkout.",
+        "status": "Closed",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 27,
+        "title": "Social login not working",
+        "description": "Facebook and Google login not working.",
+        "status": "Open",
+        "priority": "High",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 28,
+        "title": "Cart loading too slow",
+        "description": "Cart page loading time is too long.",
+        "status": "Closed",
+        "priority": "Low",
+        "assignedTo": {
+          "id": 1,
+          "name": "Aman Sharma",
+          "email": "aman@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      },
+      {
+        "id": 29,
+        "title": "Can't update shipping address",
+        "description": "User unable to update shipping address on checkout page.",
+        "status": "In Progress",
+        "priority": "Medium",
+        "assignedTo": {
+          "id": 2,
+          "name": "Priya Verma",
+          "email": "priya@devmail.com"
+        },
+        "project": {
+          "id": 1,
+          "name": "E-commerce Website",
+          "description": "Online store with cart and payment gateway"
+        }
+      },
+      {
+        "id": 30,
+        "title": "App crashes during checkout",
+        "description": "App crashes while proceeding to checkout after selecting payment method.",
+        "status": "Open",
+        "priority": "Critical",
+        "assignedTo": {
+          "id": 3,
+          "name": "Ravi Kumar",
+          "email": "ravi@devmail.com"
+        },
+        "project": {
+          "id": 2,
+          "name": "Mobile App",
+          "description": "React Native app for product catalog"
+        }
+      }
+    ]
+  }
+  

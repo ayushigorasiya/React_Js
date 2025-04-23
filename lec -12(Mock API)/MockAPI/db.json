@@ -1,0 +1,228 @@
+{ 
+  
+    "accounts": [
+      {
+        "id": 1,
+        "name": "HDFC Bank",
+        "type": "bank",
+        "balance": 65000.75,
+        "currency": "INR"
+      },
+      {
+        "id": 2,
+        "name": "Cash in Hand",
+        "type": "cash",
+        "balance": 1000.00,
+        "currency": "INR"
+      },
+      {
+        "id": 3,
+        "name": "Paytm Wallet",
+        "type": "wallet",
+        "balance": 1200.00,
+        "currency": "INR"
+      },
+      {
+        "id": 4,
+        "name": "SBI Bank",
+        "type": "bank",
+        "balance": 10000.00,
+        "currency": "INR"
+      },
+      {
+        "id": 5,
+        "name": "ICICI Credit Card",
+        "type": "credit",
+        "balance": -2500.00,
+        "currency": "INR"
+      }
+      
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "name": "Food & Dining",
+        "type": "expense",
+        "icon": "🍔"
+      },
+      {
+        "id": 2,
+        "name": "Salary",
+        "type": "income",
+        "icon": "💼"
+      },
+      {
+        "id": 3,
+        "name": "Entertainment",
+        "type": "expense",
+        "icon": "🎬"
+      },
+      {
+        "id": 4,
+        "name": "Investments",
+        "type": "expense",
+        "icon": "📈"
+      },
+      {
+        "id": 5,
+        "name": "Freelance",
+        "type": "income",
+        "icon": "🧑‍💻"
+      },
+      {
+        "id": 6,
+        "name": "Utilities",
+        "type": "expense",
+        "icon": "💡"
+      },
+      {
+        "id": 7,
+        "name": "Gifts",
+        "type": "expense",
+        "icon": "🎁"
+      },
+      {
+        "id": 8,
+        "name": "Shopping",
+        "type": "expense",
+        "icon": "🛍️"
+      },
+      {
+        "id": 9,
+        "name": "Bonus",
+        "type": "income",
+        "icon": "🎉"
+      }
+      
+    ],
+    "transactions": [
+      {
+        "id": 1,
+        "amount": 1500,
+        "type": "expense",
+        "categoryId": 1,
+        "accountId": 2,
+        "note": "Lunch with friends",
+        "date": "2025-04-20"
+      },
+      {
+        "id": 2,
+        "amount": 65000,
+        "type": "income",
+        "categoryId": 2,
+        "accountId": 1,
+        "note": "Monthly salary",
+        "date": "2025-04-01"
+      },
+      {
+        "id": 3,
+        "amount": 499,
+        "type": "expense",
+        "categoryId": 3,
+        "accountId": 3,
+        "note": "Netflix subscription",
+        "date": "2025-04-18"
+      },
+      {
+        "id": 4,
+        "amount": 10000,
+        "type": "expense",
+        "categoryId": 4,
+        "accountId": 1,
+        "note": "Mutual fund SIP",
+        "date": "2025-04-10"
+      },
+      {
+        "id": 5,
+        "amount": 8000,
+        "type": "income",
+        "categoryId": 5,
+        "accountId": 1,
+        "note": "Freelance project",
+        "date": "2025-04-16"
+      },
+      {
+        "id": 6,
+        "amount": 2200,
+        "type": "expense",
+        "categoryId": 1,
+        "accountId": 1,
+        "note": "Dinner with family",
+        "date": "2025-04-15"
+      },
+      {
+        "id": 7,
+        "amount": 150,
+        "type": "expense",
+        "categoryId": 3,
+        "accountId": 3,
+        "note": "YouTube Premium",
+        "date": "2025-04-12"
+      },
+      {
+        "id": 8,
+        "amount": 20000,
+        "type": "income",
+        "categoryId": 5,
+        "accountId": 1,
+        "note": "Website design project",
+        "date": "2025-04-08"
+      },
+      {
+        "id": 9,
+        "amount": 600,
+        "type": "expense",
+        "categoryId": 1,
+        "accountId": 2,
+        "note": "Snacks & Coffee",
+        "date": "2025-04-05"
+      },
+      {
+        "id": 10,
+        "amount": 3000,
+        "type": "expense",
+        "categoryId": 4,
+        "accountId": 1,
+        "note": "Stock investment",
+        "date": "2025-04-03"
+      },
+      {
+        "id": 11,
+        "amount": 1200,
+        "type": "expense",
+        "categoryId": 6,
+        "accountId": 4,
+        "note": "Electricity bill",
+        "date": "2025-04-19"
+      },
+      {
+        "id": 12,
+        "amount": 500,
+        "type": "expense",
+        "categoryId": 7,
+        "accountId": 2,
+        "note": "Birthday gift",
+        "date": "2025-04-11"
+      },
+      {
+        "id": 13,
+        "amount": 4500,
+        "type": "expense",
+        "categoryId": 8,
+        "accountId": 5,
+        "note": "Zara jacket",
+        "date": "2025-04-19"
+      },
+      {
+        "id": 14,
+        "amount": 10000,
+        "type": "income",
+        "categoryId": 9,
+        "accountId": 1,
+        "note": "Performance bonus",
+        "date": "2025-04-17"
+      }
+      
+    ]
+  }
+  
