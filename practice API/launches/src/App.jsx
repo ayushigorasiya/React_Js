@@ -33,6 +33,7 @@ function App() {
               <th>Cores</th>
               <th>Details</th>
               <th>Image</th>
+              <td>demo</td>
             </tr>
           </thead>
           <tbody>
@@ -57,12 +58,16 @@ function App() {
                     </td>
                     <td>{l.details}</td>
                     <td>
-                      <img src={l.links.petch.small} alt="" />
+                      <img src={l.links.patch.small} alt="" />
+                    </td>
+                    <td>
+                      {l.auto_update}
                     </td>
                   </tr>
                 )
               })
             }
+
           </tbody>
         </table>
       </div>
