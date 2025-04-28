@@ -1,0 +1,104 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#loading {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2b2b2b;
+  -webkit-mask: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg') top left / cover;
+  mask: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg') top left / cover;
+  animation: throb 1s infinite ease;
+}
+
+@keyframes throb {
+  50% {
+    background-color: #6b6b6b;
+  }
+}
+
+/* To avoid content getting cut off */
+.results-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  flex-grow: 1; /* Allow list to take remaining space */
+}
+
+.result-item {
+  margin: 0.5em;
+  flex: 1 1 20em;
+  min-width: 14em;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.cover-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: blur(10px) brightness(130%);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.result-item h2, .result-item h3 {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.5em;
+  line-height: 1.4em;
+}
+
+.result-item img {
+  width: 100px;
+  height: 100px;
+  margin: 1em auto;
+  position: relative;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+.result-item audio {
+  display: block;
+  width: 100%;
+  background-color: #222;
+}
+
+.results-list.no-results:before {
+  content: 'No songs found!';
+  color: #fff;
+  margin-top: 20px;
+}
+
