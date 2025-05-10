@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
       <div className="container">
         <a className="navbar-brand fw-bold text-danger" href="#">
-          <img src="https://stimg.cardekho.com/pwa/img/logos/desktop_blue.svg" alt="CarDekho" height="32" className="me-2" />
+          <img src="https://stimg.cardekho.com/pwa/img/carDekho-newLogo.svg" alt="CarDekho" height="50" className="me-2" />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar;

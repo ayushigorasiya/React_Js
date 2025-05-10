@@ -10,7 +10,9 @@ function App() {
     <>
       <Navbar />
       <HeroBanner />
+      <br /><br /><br />
       <SearchSection />
+      <br /><br /><br />
       <FeaturedCars />
       <PopularBrands />
       <Footer />

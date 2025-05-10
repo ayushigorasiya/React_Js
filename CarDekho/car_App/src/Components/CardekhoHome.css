@@ -1,0 +1,179 @@
+/* Cardekho Home UI Styles */
+
+:root {
+  --cardekho-orange: #ff5722;
+  --cardekho-dark: #212529;
+  --cardekho-grey: #f6f7fb;
+  --cardekho-link: #017acd;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background-color: var(--cardekho-grey) !important;
+  color: var(--cardekho-dark);
+}
+
+.navbar {
+  background: #fff !important;
+  border-bottom: 1px solid #f4f4f4 !important;
+  padding: 0.5rem 0 !important;
+}
+.navbar .navbar-brand img {
+  height: 36px;
+}
+.navbar .nav-link {
+  font-weight: 500;
+  font-size: 1.02rem;
+  color: #222 !important;
+  margin-right: 0.7rem;
+  transition: color 0.15s;
+}
+.navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+  color: var(--cardekho-orange) !important;
+}
+.navbar .btn-danger {
+  background: var(--cardekho-orange) !important;
+  border-color: var(--cardekho-orange) !important;
+  border-radius: 20px !important;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Hero Banner */
+.hero-banner-img {
+  border-radius: 0 0 20px 20px;
+  min-height: 350px;
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+.hero-banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  z-index: 5;
+}
+.hero-banner-overlay h1 {
+  font-weight: 800;
+  color: var(--cardekho-dark);
+  background: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  font-size: 2.2rem;
+}
+.hero-banner-overlay p {
+  background: rgba(255,255,255,0.90);
+  color: #575757;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 16px;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+}
+
+/* SearchSection */
+.cardekho-searchbox-section {
+  margin-top: -55px;
+  position: relative;
+  z-index: 10;
+}
+.cardekho-searchbox-section .form-control, .cardekho-searchbox-section .form-select {
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 1.05rem;
+}
+.cardekho-searchbox-section .btn-danger {
+  background: var(--cardekho-orange) !important;
+  border-color: var(--cardekho-orange) !important;
+  border-radius: 16px !important;
+  font-weight: 600;
+}
+
+/* Featured Cars */
+.cardekho-featured-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.cardekho-featured-section .card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow .15s;
+  border: none;
+  background: #fff;
+}
+.cardekho-featured-section .card:hover {
+  box-shadow: 0 10px 25px rgba(104,44,24,0.12), 0 1.5px 8px 0 rgba(255,87,34,0.10);
+  transform: translateY(-3px);
+}
+.cardekho-featured-section img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  height: 153px;
+}
+.cardekho-featured-section .btn-outline-danger {
+  border-color: var(--cardekho-orange) !important;
+  color: var(--cardekho-orange) !important;
+  border-radius: 14px !important;
+  font-weight: 600;
+}
+.cardekho-featured-section .btn-outline-danger:hover {
+  background: var(--cardekho-orange) !important;
+  color: #fff !important;
+}
+
+/* Popular Brands */
+.cardekho-popularbrands-section .card {
+  border-radius: 12px;
+  border: 1px solid #e7e7e7;
+  transition: box-shadow .15s, border-color .15s;
+  background: #fff;
+  align-items: center;
+  min-height: 92px;
+  padding: 12px 0;
+}
+.cardekho-popularbrands-section .card:hover {
+  box-shadow: 0 4px 18px rgba(0,0,0,.07);
+  border-color: var(--cardekho-orange);
+}
+.cardekho-popularbrands-section img {
+  width: 82px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* Footer */
+footer {
+  background: #141414 !important;
+}
+footer .fw-bold {
+  color: #fff;
+  font-weight: 700 !important;
+}
+footer ul li a {
+  color: #d6d6d6 !important;
+  font-size: 1.02rem;
+}
+footer .small {
+  color: #aaa !important;
+}
+footer img[alt="CarDekho Logo"] {
+  filter: drop-shadow(0 2px 8px #1b1b1bc0);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero-banner-img {
+    min-height: 200px;
+    max-height: 240px;
+    border-radius: 0 0 10px 10px;
+  }
+  .cardekho-searchbox-section {
+    margin-top: -3.7rem;
+    padding: 0 0.2rem;
+  }
+}
