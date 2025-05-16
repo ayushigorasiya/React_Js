@@ -15,7 +15,7 @@ function App() {
   const addForm = () => {
     setForm([...form, { ...FormItem }]);
     setError([...error, { ...FormItem }]);
-  };
+  };  
   const removeForm = (index) => {
     const updatedForm = [...form];
     updatedForm.splice(index, 1);
@@ -86,7 +86,7 @@ function App() {
     <div align="center">
       <h1 className="gf">Google Form</h1>
       <div>
-        <img width={772} height={195}  src="https://lh7-us.googleusercontent.com/1GVncQGA4swbs0L16lcRKAJgWzudNzyUFRBJSvnsHAmjinXS-_LAfTX-iif45t_CYjy2i6xvObYqV6xRCuDRnYSIYKGWFkREAr-G1DoRgFkVUo4Kg9Ffq8ondrJ9XThqQfr7h8ykvyVblHPiKkyWCV5zfHb4dLIEnLLmY6kvAuQRuXE26DXr3MXrr-kWT9Onxf17b7Jd?key=ZQvAYDHygTiPLWRC1FJvgw" alt="" />
+        <img width={772} height={195}  src="https://lh7-us.googleusercontent.com/zoalxzUzmfCNATBqUBhkzsKJ5OMxAXFHt1pyI7-7X0O23dR4uEUdP_4uNWfvdvvt5f8BPWB1AEBUI8vwH-7a5X3vMiRQMBHpALlz3Nj_je0iKO9Mw0LTygMGUbVPMAl76TLsJjimHuaIyGXlRx464tVlgbQCGilMW3pXBkyvd83GfPa7x1g72EsG9Zsw0FiMX46Tb2Lm?key=nFZJFxO_dgflUJ0SgXg_mQ" alt="" />
       </div>
     
       <form onSubmit={handleSubmit}>
