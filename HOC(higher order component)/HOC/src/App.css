@@ -1,0 +1,10 @@
+h2{
+  font-size: 32px;
+  padding: 20px;
+  font-weight: 600;
+  color: aliceblue;
+  background-color: darkslategrey;
+  border-radius: 10px;
+  border-top: 3px solid rgba(240, 248, 255, 0.522);
+   border-bottom: 3px solid rgba(240, 248, 255, 0.522);
+}
