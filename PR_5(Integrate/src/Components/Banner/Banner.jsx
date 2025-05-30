@@ -10,9 +10,9 @@ const Banner = () => {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-12 mt-3'>
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
+                        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
                                     <div className='first-banner position-relative'>
                                         <div className='container'>
                                             <div className='row'>
@@ -31,13 +31,9 @@ const Banner = () => {
 
 
 
-                                <div class="carousel-item">
+                                <div className="carousel-item">
                                     <div className='second-banner  position-relative'>
 
-                                        <img src="Image/banner-leaf.png" alt="" />
-                                        <img src="Image/banner-orange.png" alt="" height={50} width={80}
-                                            className='position-absolute m-5 end-50 opacity:-5 swing'
-                                        />
                                         <div className='container'>
                                             <div className='row'>
 
@@ -51,19 +47,16 @@ const Banner = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="Image/banner-down.png" alt="" className='cherry' />
-
-                                        <img src="Image/cherry.png" alt="" className='third' />
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
+                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
+                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
                             </button>
                         </div>
                     </div>
