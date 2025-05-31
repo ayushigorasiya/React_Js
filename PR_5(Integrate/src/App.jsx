@@ -5,21 +5,27 @@ import Footer from "./Components/Footer/Footer"
 import Header from "./Components/Header/Header"
 import Healthy from "./Components/Healthy/Healthy"
 import News from "./Components/News/News"
+import Order from "./Components/Order/Order"
 import Popular from "./Components/Popular/Popular"
+import Slider from "./Components/Slider/Slider"
 
 function App() {
 
   return (
     <>
+      
       <Header />
       <Banner />
       <Categories />
-      <Popular/>
-      <Healthy/>
-      <Blog/>
-      <News/>
-      <Footer/>
-      
+      <Popular />
+      <Slider />
+      <Order/>
+      <Healthy />
+      <Blog />
+      <News />
+      <Footer />
+
+
     </>
   )
 }

@@ -1,0 +1,33 @@
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.order .order-icon {
+ padding: 24px;
+ background-color: #f7f7f8;
+ border-radius: 5px;
+ border: 1px solid #e9e9e9;
+ flex-direction: column;
+ margin: 10px;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 15px;
+}
+
+.order .order-icon span {
+ font-size: 40px;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 15px;
+ color: #64B496;
+}
+
+
+
+
+

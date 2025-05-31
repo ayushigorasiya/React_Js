@@ -7,7 +7,7 @@ const Categories = () => {
                 <div className="container">
                     <div className="row mb-minus-24">
                         <div className="col-lg-4 col-12 mb-24">
-                            <div className="cr-categories">
+                            <div className="categories">
                                 <ul className="nav nav-tabs" id="myTab" role="tablist">
                                     <li className="nav-item mb-4" role="presentation">
                                         <button className="nav-link active center-categories-inner" id="cake_milk-tab"
@@ -19,28 +19,28 @@ const Categories = () => {
                                     <li className="nav-item mb-4" role="presentation">
                                         <button className="nav-link center-categories-inner" id="meat-tab" data-bs-toggle="tab"
                                             data-bs-target="#meat" type="button" role="tab" aria-controls="meat"
-                                            aria-selected="false" tabindex="-1">
+                                            aria-selected="false" tabIndex="-1">
                                             Fresh Meat <span>(30 items)</span>
                                         </button>
                                     </li>
                                     <li className="nav-item mb-4" role="presentation">
                                         <button className="nav-link center-categories-inner" id="Vegetables-tab"
                                             data-bs-toggle="tab" data-bs-target="#Vegetables" type="button" role="tab"
-                                            aria-controls="Vegetables" aria-selected="false" tabindex="-1">
+                                            aria-controls="Vegetables" aria-selected="false" tabIndex="-1">
                                             Vegetables <span>(25 items)</span>
                                         </button>
                                     </li>
                                     <li className="nav-item mb-4" role="presentation">
                                         <button className="nav-link center-categories-inner" id="Custard-tab" data-bs-toggle="tab"
                                             data-bs-target="#Custard" type="button" role="tab" aria-controls="Custard"
-                                            aria-selected="false" tabindex="-1">
+                                            aria-selected="false" tabIndex="-1">
                                             Apple & Mango <span>(45 items)</span>
                                         </button>
                                     </li>
                                     <li className="nav-item mb-4" role="presentation">
                                         <button className="nav-link center-categories-inner" id="Strawberry-tab"
                                             data-bs-toggle="tab" data-bs-target="#Strawberry" type="button" role="tab"
-                                            aria-controls="Strawberry" aria-selected="false" tabindex="-1">
+                                            aria-controls="Strawberry" aria-selected="false" tabIndex="-1">
                                             Strawberry <span>(68 items)</span>
                                         </button>
                                     </li>

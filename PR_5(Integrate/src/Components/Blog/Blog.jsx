@@ -5,15 +5,15 @@ import { FaStar } from "react-icons/fa6";
 const Blog = () => {
   return (
     <div>
-    <section className="section-testimonial padding-b-100">
+    <section className="blog padding-b-100">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
                     <div className="mb-30"  >
-                        <div className="cr-banner">
+                        <div className="blog-s">
                             <h2>Great Words From People</h2>
                         </div>
-                        <div className="cr-banner-sub-title">
+                        <div className="blog-title">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/> 
                                &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; incididunt ut labore lacus vel facilisis. </p>
                         </div>
@@ -22,7 +22,7 @@ const Blog = () => {
             </div>
             <div className="row">
                 <div className="col-lg-12 d-flex">
-                    <div className="cr-testimonial-slider swiper-container d-flex">
+                    <div className="blog-slider swiper-container d-flex">
                         <div className="swiper-wrapper cr-testimonial-pt-50 d-flex">
 
                             <div className="swiper-slide m-5"  >

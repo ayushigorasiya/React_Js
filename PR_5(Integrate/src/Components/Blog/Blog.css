@@ -1,5 +1,5 @@
 
-.section-testimonial {
+.blog {
     position: relative;
   }
 
@@ -8,13 +8,13 @@
     padding-top: 50px;
 
   }
-  .cr-banner h2{
+  .blog-s h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  .cr-banner-sub-title p{
+  .blog-title p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

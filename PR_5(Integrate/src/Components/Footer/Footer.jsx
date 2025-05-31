@@ -1,15 +1,13 @@
 import React from 'react'
 import "./Footer.css"
-import { IoLocationOutline } from "react-icons/io5";//locationnnn
-import { RiMailSendLine } from "react-icons/ri";//mail
-import { IoCallSharp } from "react-icons/io5";//phone
+import { IoLocationOutline } from "react-icons/io5";
+import { RiMailSendLine } from "react-icons/ri";
+import { IoCallSharp } from "react-icons/io5";
 import { RiFacebookLine } from "react-icons/ri";
 import { IoLogoInstagram } from "react-icons/io5";
-
 import { RiTwitterXLine } from "react-icons/ri";
 import { IoBasketballOutline } from "react-icons/io5";
-
-import { FaTelegramPlane } from "react-icons/fa";//tele
+import { FaTelegramPlane } from "react-icons/fa";
 
 
 const Footer = () => {

@@ -5,20 +5,20 @@ import "./Healthy.css"
 const Healthy = () => {
     return (
         <div>
-            <section class="section-deal padding-b-100">
-                <div class="bg-banner-deal">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="cr-deal-rightside">
-                                    <div class="cr-deal-content" data-aos="fade-up" data-aos-duration="2000">
+            <section className="section-deal padding-b-100">
+                <div className="bg-banner-deal">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="cr-deal-rightside">
+                                    <div className="cr-deal-content" data-aos="fade-up" data-aos-duration="2000">
                                         <span><code>35%</code> OFF</span>
-                                        <h4 class="cr-deal-title">Great deal on organic food.</h4>
+                                        <h4 className="cr-deal-title">Great deal on organic food.</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do maecenas accumsan
                                             lacus
                                             vel facilisis. </p>
-                                        <div id="timer" class="cr-counter">
-                                            <div class="cr-counter-inner">
+                                        <div id="timer" className="cr-counter">
+                                            <div className="cr-counter-inner">
                                                 <div className='cr-timer'>
 
                                                     <h4>265</h4> &nbsp;
