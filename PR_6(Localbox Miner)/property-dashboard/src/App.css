@@ -1,154 +1,23 @@
-/* body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.light-theme {
-  background: url('https://i.ytimg.com/vi/bioGfGZTd2c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCeuqK9syElmmpqrDV_mOuS133PlA') no-repeat center center fixed;
-  background-size: cover;
-  background-blend-mode: darken;
-  background-color: #00000080;
-  color: #000;
-}
-
-.dark-theme {
-  background: url('https://www.familyhandyman.com/wp-content/uploads/2022/08/GettyImages-75627245-e1660681920572.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-}
-
-.theme-container {
-  padding: 30px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.theme-box {
-  padding: 25px 35px;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 900px;
-  margin-bottom: 30px;
-  backdrop-filter: blur(8px);
-  transition: all 0.3s ease;
-}
-
-.light-theme .theme-box {
-  background-color: rgba(0, 0, 0, 0.371);
-  color: white;
-}
-
-.dark-theme .theme-box {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-  font-size: 15px;
-}
-
-th, td {
-  padding: 12px 16px;
-  text-align: left;
-  border-top: 1px solid #ccc;
-}
-
-tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-}
-
-.dark-theme table th,
-.dark-theme table td {
-  color: #111;
-}
-
-.light-theme table th,
-.light-theme table td {
-  color: #fff;
-}
-
-button {
-  padding: 8px 16px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.light-theme button {
-  background-color: #ffc107;
-  color: #000;
-}
-
-.light-theme button:hover {
-  background-color: #ff9800;
-}
-
-.dark-theme button {
-  background-color: #0069d9;
-  color: white;
-}
-
-.dark-theme button:hover {
-  background-color: #0053aa;
-}
-
-input[type="text"],
-input[type="number"],
-select {
-  padding: 8px;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
-
-.dark-theme input,
-.dark-theme select {
-  background-color: #fff;
-  color: #000;
-}
-
-.light-theme input,
-.light-theme select {
-  background-color: #222;
-  color: #fff;
-  border: 1px solid #d7d6d6;
-}
-
-input[type="radio"] {
-  margin-right: 4px;
-} */
-
-
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Light theme (dark content) */
 .light-theme {
   background: url('https://i.ytimg.com/vi/bioGfGZTd2c/hq720.jpg') no-repeat center center fixed;
   background-size: cover;
   background-blend-mode: darken;
-  background-color: #00000080;
-  color: #000;
+  background-color: #ffffff;
+  color: #fff;
 }
 
-/* Dark theme (light content) */
 .dark-theme {
   background: url('https://www.familyhandyman.com/wp-content/uploads/2022/08/GettyImages-75627245-e1660681920572.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #fff;
+  background-blend-mode: darken;
+  background-color: #00000080;
+  color: #000;
 }
 
 .theme-container {
@@ -170,50 +39,73 @@ body, html {
 }
 
 .light-theme .theme-box {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-}
-
-.dark-theme .theme-box {
-  background-color: rgba(255, 255, 255, 0.9);
+  
+  background-color: rgba(255, 255, 255, 0.171);
   color: black;
 }
 
-/* Form Table Layout */
-form table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 15px 10px;
+.dark-theme .theme-box {
+  
+  background-color: rgba(0, 0, 0, 0.4);
+  
+  color: white;
 }
 
-form td {
-  vertical-align: top;
-  font-weight: 500;
-  padding-right: 10px;
+/* Professional Form Styling */
+.modern-form {
+  display: grid;
+  gap: 20px;
 }
 
-form input[type="text"],
-form input[type="number"],
-form select {
-  padding: 10px;
-  width: 100%;
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 12px 2px 7px 2px;
+  border-radius:6px ;
+  background-color: #babdbf;
+  color: black;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+  padding: 12px;
   font-size: 14px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  transition: 0.3s;
+  background-color: #babdbf;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-form input:focus,
-form select:focus {
+.form-group input:focus,
+.form-group select:focus {
   border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+  outline: none;
 }
 
-input[type="radio"] {
-  margin-right: 5px;
-  margin-left: 10px;
+.form-group button {
+  align-self: flex-start;
+  padding: 10px 20px;
 }
 
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -232,7 +124,7 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-/* Button Styling */
+/* Buttons */
 button {
   padding: 10px 16px;
   margin: 6px 3px;
@@ -247,7 +139,16 @@ button {
   background-color: #ffc107;
   color: #000;
 }
-
+.light-theme .submitbtn {
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 400px !important;
+}
+.dark-theme .submitbtn {
+  background-color: #0069d9;
+  color: #fff;
+  padding: 10px 400px !important;
+}
 .light-theme button:hover {
   background-color: #ff9800;
 }
@@ -263,10 +164,32 @@ button {
 
 .dark-theme table th,
 .dark-theme table td {
-  color: #111;
+  color: #fff;
+  font-weight: 500;
 }
 
 .light-theme table th,
 .light-theme table td {
-  color: #fff;
+  color: #000;
+  font-weight: 500;
 }
+
+.dark-theme h2{
+  background-color: rgba(0, 0, 0, 0.61) ;
+  padding: 20px 330px;
+  border-radius: 9px;
+  color: white ;
+}
+.light-theme h2{
+  
+  background-color: rgba(255, 255, 255, 0.171);
+  color: black;
+  padding: 20px 330px;
+  border-radius: 9px;
+}
+/* h2{
+  background-color: rgba(0, 0, 0, 0.61);
+  padding: 20px 330px;
+  border-radius: 9px;
+  color: white !important;
+} */
