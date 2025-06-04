@@ -1,9 +1,9 @@
 import { useState } from "react";
-
-
-
+import { useNavigate } from "react-router-dom";
+import React from 'react';
 function Add() {
-
+  const navigate = useNavigate();
+  const [allrecord, setAllrecord] = useState(JSON.parse(localStorage.getItem('users')) || []);
   const [forminput, setFormInput] = useState({
     name: '',
     email: '',
@@ -40,7 +40,16 @@ function Add() {
   }
   const handleSubmit = (e) => {
     e.preventDefault();
+    let obj ={
+      id: Math.floor(Math.random() * 1000),
+      ...forminput
+    }
+    let oldrecord = [...allrecord , forminput]
+    localStorage.setItem('users', JSON.stringify(oldrecord));
+    // setAllrecord(oldrecord);
     console.log(forminput);
+    alert("User Added Successfully...!");
+    navigate('/');
   }
   return (
     <div align="center">
