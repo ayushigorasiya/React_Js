@@ -1,0 +1,199 @@
+/* Container */
+.containerr {
+    max-width: 95%;
+    margin: 50px auto;
+    padding: 40px 25px 60px;
+    background-color: #121212;
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(0, 255, 204, 0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ddd;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 45px;
+    color: #00ffcc;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 18px #00ffcc;
+}
+
+/* Top bar with Add button */
+.top-bar {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* Buttons base style */
+.btn {
+    border-radius: 16px;
+    padding: 14px 32px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    user-select: none;
+    box-shadow: 0 0 18px rgba(0, 255, 204, 0.4);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Primary button for Add */
+.btn-primary {
+    background: linear-gradient(135deg, #00ffcc, #00cc99);
+    color: #121212;
+    box-shadow: 0 0 28px #00ffcc;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #00cc99, #009966);
+    box-shadow: 0 0 38px #009966;
+    color: #e0e0e0;
+}
+
+/* Cards container grid: fixed max 3 cards per row */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* Individual Card */
+.card {
+    background-color: #1f1f1f;
+    /* lighter dark */
+    border-radius: 20px;
+    padding: 28px 32px;
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.25);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    max-width: 320px;
+    /* uniform width */
+    min-height: 390px;
+    /* equal height for all cards */
+    margin: 0 auto;
+    /* center in grid cell */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 45px #00ffcc;
+}
+
+/* Card header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 12px;
+}
+
+.card-name {
+    font-size: 2rem;
+    color: #00ffcc;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    user-select: text;
+}
+
+.card-id {
+    font-size: 1.1rem;
+    color: #66fff0;
+    font-weight: 600;
+    font-style: italic;
+    user-select: text;
+}
+
+/* Card body text */
+.card-body p {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: #ccc;
+    user-select: text;
+}
+
+.card-body strong {
+    color: #00ffcc;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+/* Card footer with buttons */
+.card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+/* Danger button (Delete) */
+.btn-danger {
+    background-color: #ff3b3b;
+    box-shadow: 0 0 22px rgba(255, 59, 59, 0.75);
+    color: #eee;
+    padding: 12px 32px;
+    font-weight: 700;
+    border-radius: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    min-width: 110px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.btn-danger:hover {
+    background-color: #cc3232;
+    box-shadow: 0 0 38px rgba(204, 50, 50, 1);
+}
+
+/* Secondary button (Edit) */
+.btn-secondary {
+    background: linear-gradient(135deg, #00ffcc, #00cc99);
+    color: #121212;
+    box-shadow: 0 0 22px #00ffcc;
+    padding: 12px 32px;
+    font-weight: 700;
+    border-radius: 16px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    min-width: 110px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #00cc99, #009966);
+    box-shadow: 0 0 38px #009966;
+    color: #e0e0e0;
+}
+
+/* No records message */
+.no-data {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #555;
+    font-style: italic;
+    margin-top: 70px;
+    user-select: none;
+}
+
+/* Responsive fallback */
+/* 2 cards per row on tablets */
+@media (max-width: 980px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1 card per row on phones */
+@media (max-width: 640px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
