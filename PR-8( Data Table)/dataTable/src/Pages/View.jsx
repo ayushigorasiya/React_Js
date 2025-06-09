@@ -6,6 +6,9 @@ const View = () => {
     const [theme, setTheme] = useState("light");
     const [allProperties, setAllProperties] = useState([]);
 
+    //create a state for reset 
+    const [originalData, setOriginalData] = useState([]);
+
     //Create a State for Searching Data
 
     const [SearchData, setSearchData] = useState({
@@ -73,6 +76,7 @@ const View = () => {
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem("properties")) || [];
         setAllProperties(data);
+        setOriginalData(data); /// reset ke liye
     }, [])
 
     // Delete Properties Start
@@ -127,6 +131,24 @@ const View = () => {
                                     <option value="Sold">Sold</option>
                                     <option value="Rented">Rented</option>
                                 </select>
+                            </td>
+                            <td>
+                                <button onClick={() => {
+                                    setSearchData({
+                                        agent: "",
+                                        address: "",
+                                        type: "",
+                                        price: "",
+                                        status: ""
+                                    });
+                                    setAllProperties(originalData);
+                                    setSortData({
+                                        field: 'id',
+                                        order: true
+                                    });
+                                }}>
+                                    Reset
+                                </button>
                             </td>
                         </tr>
                         <h2>All Property Listings</h2>
