@@ -1,4 +1,4 @@
-import rootCounter from "./Reducers/IndexReducers";
+import rootCounter from "./Reducer/CrudReducer";
 import { createStore } from "redux";
 const store = createStore(rootCounter) 
 

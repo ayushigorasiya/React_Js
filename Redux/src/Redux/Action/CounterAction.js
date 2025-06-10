@@ -3,5 +3,9 @@ const increment = () => {
         type: "inc"
     })
 }
-
-export { increment }
+const decrement = () => {
+    return ({
+        type: "dec"
+    })
+}
+export { increment , decrement }
