@@ -12,7 +12,19 @@ const Crud = (state = initialState , action) => {
                 ...state,
                 users:oldrecord
             }
+        case 'deleteuser':
+            console.log(action.payload);
 
+            let deletedata = state.users.filter(val => val.userid != action.payload)
+            console.log(deletedata);
+            
+            localStorage.setItem('users' , JSON.stringify('deletedata'));
+
+            return{
+                ...state,
+                users:deletedata
+            }
+            
         default:
             return state;
             

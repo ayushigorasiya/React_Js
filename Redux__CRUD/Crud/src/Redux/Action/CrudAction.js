@@ -3,7 +3,15 @@ const ADD_USER = (data) => {
     return{
         type :'adduser',
         payload : data
-    }
-    
+    }   
 }
-export{ADD_USER}
+
+const DELETE_USER = (id) => {
+    console.log(id);
+    
+    return{
+        type: 'deleteuser',
+        payload : id
+    }
+}
+export{ADD_USER  , DELETE_USER}

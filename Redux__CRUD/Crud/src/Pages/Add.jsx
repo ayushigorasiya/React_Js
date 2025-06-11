@@ -25,7 +25,7 @@ function Add() {
             ...forminput
         }
         dispatch(ADD_USER(obj));
-        navigate(`/view`);
+        navigate(`/`);
     }
   return (
     <div align="center">
