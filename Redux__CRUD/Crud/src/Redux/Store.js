@@ -1,5 +1,5 @@
-import rootCounter from "./Reducer/CrudReducer";
+import rootCrud from "./Reducer/CrudReducer";
 import { createStore } from "redux";
-const store = createStore(rootCounter) 
+const store = createStore(rootCrud) 
 
 export default store

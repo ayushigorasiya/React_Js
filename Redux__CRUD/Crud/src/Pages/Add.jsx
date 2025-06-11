@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom'
-
+import { Link, useNavigate } from 'react-router-dom'
+import{ADD_USER} from '../Redux/Action/CrudAction';
 function Add() {
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const [forminput , setFormInput] = useState({
         name:'',
@@ -18,12 +19,13 @@ function Add() {
         })
     }
     const handleSubmit = (e) => {
-        e.prevantDefault();
+        e.preventDefault();
         let obj ={
             userid : Math.floor(Math.random()*10000),
             ...forminput
         }
         dispatch(ADD_USER(obj));
+        navigate(`/view`);
     }
   return (
     <div align="center">
