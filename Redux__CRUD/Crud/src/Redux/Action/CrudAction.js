@@ -14,4 +14,10 @@ const DELETE_USER = (id) => {
         payload : id
     }
 }
-export{ADD_USER  , DELETE_USER}
+
+const EDIT_USER = (id) => {
+    return{
+        type: 'edituser',
+        payload: id
+    }}
+export{ADD_USER  , DELETE_USER , EDIT_USER}

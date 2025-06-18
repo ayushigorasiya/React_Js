@@ -8,6 +8,9 @@ import { DELETE_USER } from '../Redux/Action/CrudAction';
 
   const users = useSelector((state) => state.users)
 
+  const editUser = (id) => {
+    navigate(`/edit/${id}`);
+  }
 
   
     return (
@@ -36,6 +39,7 @@ import { DELETE_USER } from '../Redux/Action/CrudAction';
                       <td>{password}</td>
                       <td>
                         <button onClick={() => dispatch(DELETE_USER(userid))}>Delete</button>
+                        <button onClick={() => editUser(userid)}>Edit</button>
                       </td>
                     </tr>
                   )
