@@ -1,16 +1,8 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
+import React from 'react';
+import Gkeep from './pages/Gkeep';
 
-function App() {
-  return (
-    <>
-    <BrowserRouter>
-      <Routes>
-      
-      </Routes>
-    </BrowserRouter>
-    </>
-  )
-}
+const App = () => {
+  return <Gkeep />;
+};
 
-export default App
+export default App;
