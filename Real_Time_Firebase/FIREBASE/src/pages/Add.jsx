@@ -2,16 +2,12 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { getDatabase, ref, set } from 'firebase/database';
 import { app } from '../Firebase';
-
-
-
 function Add() {
   const navigate = useNavigate();
   const [forminput, setFormInput] = useState({
     name: '',
     age: ''
   });
-
   const changeInput = (e) => {
     const { name, value } = e.target;
     setFormInput({
@@ -19,16 +15,13 @@ function Add() {
       [name]: value
     });
   };
-
   const db = getDatabase(app);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     let obj = {
       userid: Math.floor(Math.random() * 10000),
       ...forminput
     };
-
     set(ref(db, `users/${obj.userid}`), {
       name: forminput.name,
       age: forminput.age
@@ -40,7 +33,6 @@ function Add() {
       return false;
     });
   };
-
   return (
     <div className="container">
       <h2>Add User</h2>

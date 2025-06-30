@@ -7,9 +7,7 @@ import { app } from '../Firebase';
 const View = () => {
   const navigate = useNavigate();
   const [allusers, setAllUsers] = useState({});
-
   const db = getDatabase(app);
-
   const getUser = () => {
     const allrecord = ref(db, 'users');
     onValue(allrecord, (row) => {
@@ -17,11 +15,9 @@ const View = () => {
       setAllUsers(data || {});
     });
   };
-
   useEffect(() => {
     getUser();
   }, []);
-
   const deleteUser = (id) => {
     const deletedata = ref(db, `users/${id}`);
     remove(deletedata)
@@ -33,16 +29,14 @@ const View = () => {
         return false;
       });
   };
-
   const editUser = (id, name, age) => {
     let data = { id, name, age };
     navigate(`/edit`, { state: data });
   };
-
   return (
     <div className="container">
       <h2>View User</h2>
-      <table>
+      <table border={1}>
         <thead>
           <tr>
             <th>Id</th>
@@ -61,8 +55,6 @@ const View = () => {
                 <td>
                  <button className="delete" onClick={() => deleteUser(key)}>Delete</button>
 <button className="edit" onClick={() => editUser(key, value.name, value.age)}>Edit</button>
-
-
                 </td>
               </tr>
             ))
