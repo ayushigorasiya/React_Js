@@ -8,7 +8,7 @@ function Login() {
   const handleLogin = async() => {
     alert(`login successfully....!`)
  
-      navigate('/todo')
+      
     try{
       let user = await signInWithPopup(getauth, googleauthprovider)
       console.log(user);
@@ -16,6 +16,7 @@ function Login() {
       console.log(err);
       return false
     }
+    navigate('/todo')
   }
   return (
     <div align="center">
