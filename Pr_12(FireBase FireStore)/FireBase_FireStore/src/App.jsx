@@ -1,23 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Add from "./pages/Add"
-import View from "./pages/View"
-function App() {
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Login from './pages/login'
+import Todo from './Todo'
 
+function App() {
   return (
-    <>
-    <div align="center">
-      <h1>Todo List</h1>
-      <hr />
-      <hr />
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<View />}/>
-      <Route path="/add" element={<Add/>}/>
-      
-    </Routes>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Login/>}/>
+          <Route path='/todo' element={<Todo/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
-    </>
   )
 }
 
