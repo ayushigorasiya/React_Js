@@ -1,10 +1,11 @@
+// redux/reducers/index.js
 import { combineReducers } from 'redux';
-import destinationReducer from './destinationReducer';
 import authReducer from './authReducer';
+import destinationReducer from './destinationReducer';
 
 const rootReducer = combineReducers({
-  destinations: destinationReducer,
   auth: authReducer,
+  destinations: destinationReducer
 });
 
 export default rootReducer;

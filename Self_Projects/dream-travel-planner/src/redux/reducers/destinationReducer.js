@@ -1,3 +1,4 @@
+// redux/reducers/destinationReducer.js
 const initialState = {
   loading: false,
   data: [],

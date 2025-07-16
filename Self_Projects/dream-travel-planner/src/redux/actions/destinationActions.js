@@ -1,5 +1,5 @@
+// redux/actions/destinationActions.js
 import axios from 'axios';
-
 const API = 'http://localhost:8080/destinations';
 
 export const fetchDestinations = () => async dispatch => {

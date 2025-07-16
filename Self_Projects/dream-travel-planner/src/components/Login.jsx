@@ -1,9 +1,9 @@
-// ----------------------------
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../redux/actions/authActions';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Container } from 'react-bootstrap';
+import axios from 'axios';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -11,13 +11,19 @@ function Login() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (username === 'admin' && password === 'admin') {
-      dispatch(login());
-      navigate('/');
-    } else {
-      alert('Invalid Credentials');
+    try {
+      const res = await axios.get(`http://localhost:8000/users?username=${username}&password=${password}`);
+      if (res.data.length > 0) {
+        dispatch(login());
+        navigate('/');
+      } else {
+        alert('Invalid credentials');
+      }
+    } catch (err) {
+      alert('Login failed');
+      console.error(err);
     }
   };
 
