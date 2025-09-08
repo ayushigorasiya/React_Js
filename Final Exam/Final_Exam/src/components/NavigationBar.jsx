@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { logout } from '../redux/actions/authAction'; // ✅ import logout action
+import { logout } from '../redux/actions/authAction'; 
 
 function NavigationBar() {
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ function NavigationBar() {
   const isAuth = useSelector(state => state.auth.isAuthenticated);
 
   const handleLogout = () => {
-    dispatch(logout()); // ✅ updated line
+    dispatch(logout()); 
     navigate('/login');
   };
 
