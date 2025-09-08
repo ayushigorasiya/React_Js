@@ -4,7 +4,7 @@ import RoomList from './components/RoomList';
 import RoomDetails from './components/RoomDetails';
 import ReservationForm from './components/ReservationForm';
 import ReservationList from './components/ReservationList';
-import NavigationBar from './components/NavigationBar'; // Make sure to use the correct Navbar
+import NavigationBar from './components/NavigationBar'; 
 import PrivateRoute from './components/PrivateRoute';
 import Login from './components/Login';
 
