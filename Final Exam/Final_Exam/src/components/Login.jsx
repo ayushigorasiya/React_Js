@@ -13,7 +13,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username === 'admin' && password === 'admin') {
-      dispatch(login()); // ✅ updated line
+      dispatch(login()); 
       navigate('/');
     } else {
       alert('Invalid credentials');
